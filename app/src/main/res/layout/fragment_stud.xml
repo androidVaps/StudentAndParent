@@ -1,0 +1,293 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/planebg_blue"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.san.myapplication.NewDesign.StudFragment">
+
+
+    <!--  <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_weight="3"
+          android:layout_marginTop="10dp"
+          android:weightSum="4">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:layout_weight="2"
+              android:background="@drawable/stud_details_backgr"
+              android:orientation="vertical">
+
+          </LinearLayout>
+
+          <ImageView
+              android:layout_width="118dp"
+              android:layout_height="110dp"
+              android:layout_gravity="bottom|center_horizontal"
+              android:layout_marginBottom="20dip"
+              android:background="@mipmap/ic_launcher" />
+
+      </FrameLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/stud_details_backgr"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_stud"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="0dip"
+             />
+        <!--android:background="@mipmap/ic_launcher"
+        android:layout_width="1180dp"
+        android:layout_height="110dp"-->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:id="@+id/txt_stud_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/edit_stud_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:textColor="@color/white"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Reg. no" />
+
+            <TextView
+                android:id="@+id/edit_stud_regno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:textColor="@color/white"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="D.O.B" />
+
+            <TextView
+                android:id="@+id/edit_stud_dob"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:textColor="@color/white"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="D.O.A" />
+
+            <TextView
+                android:id="@+id/edit_stud_doa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:textColor="@color/white"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Mobile no." />
+
+            <TextView
+                android:id="@+id/edit_stud_contact"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:textColor="@color/white"
+                android:gravity="center" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="E-mail" />
+
+            <TextView
+                android:id="@+id/edit_stud_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:textColor="@color/white"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
